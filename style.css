@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1531685250784-7569952593d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2lodGUlMjB3YWxsfGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.1px;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    margin-top: 3% ;
+    margin-left: 7%;
+    width: 47%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    /* overflow: hidden; */
+}
+
+nav > a {
+    font-weight: 600;
+    color: brown;
+    text-decoration: none;
+}
+
+.bike {
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    transform: translate(-50% , -50%);
+    width: 1100px;
+    height: 1200px;
+    background-color: red;
+    border-radius: 50%;
+    
+
+}
+
+@media (max-width:600px) {
+    nav {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        line-height: 2;
+    }
+
+    nav > a { 
+        /* display: none; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        
+  }
+  
+  .bike {
+    position: absolute;
+    top: 50%;
+    right: -85%;
+    transform: translate(-50% , -50%);
+    width: 90%;
+    height: 110%;
+    background-color: red;
+    border-radius: 50%;
+    
+
+}
+
+.bike > i1 {
+    display: none;
+}
+
+.bike > i2 {
+    /* height: 1%; */
+     width: 40%;
+    /* height: 10%;  */
+    /* position: absolute; */
+    top: 0%;
+    left: -0%;
+    transform: translate( -50% , -50%);
+}
+
+}
+
+button {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    padding: 14px 35px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid rgb(247, 244, 244);
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+.bike > #i2 {
+    display: none;
+}
+
+.bike > #i1 {
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    transform: translate( -50% , -50%);
+}
